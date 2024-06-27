@@ -1,3 +1,5 @@
+import { ColorValue, ImageSourcePropType } from "react-native";
+
 export type PhotoTypes = {
     farm : number,
     height_s:number,
@@ -12,3 +14,10 @@ export type PhotoTypes = {
     url_s: string,
     width_s:number
 }
+
+export type TabIconPropType = {
+    icon : ImageSourcePropType,
+    color : ColorValue,
+    name:String,
+    focused :Boolean
+};

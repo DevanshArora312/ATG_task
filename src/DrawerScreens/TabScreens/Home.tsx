@@ -1,9 +1,9 @@
 import { View, Text, SafeAreaView, FlatList,RefreshControl, ActivityIndicator } from 'react-native'
 import React, { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import HeadBar from './components/HeadBar';
-import Card from './components/Card';
-import { PhotoTypes } from './Types';
+import HeadBar from '../../components/HeadBar';
+import Card from '../../components/Card';
+import { PhotoTypes } from '../../Types';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const Home = ({navigation} : {navigation : any}) => {
@@ -56,7 +56,7 @@ const Home = ({navigation} : {navigation : any}) => {
                 Recent Images 
             </Text>
         </View> */}
-        <View className='w-full text-[25px] flex-1 h-full p-2 justify-center items-center pb-10'>
+        <View className='w-full text-[25px] flex-1 h-full p-2 justify-center items-center pb-24'>
             <View className='flex-row gap-x-7 justify-between items-center my-3'>
                 <TouchableOpacity
                     className={`bg-blue-500 text-white p-1 px-3 ${page === 1 ? "bg-white/50" : ""}`}

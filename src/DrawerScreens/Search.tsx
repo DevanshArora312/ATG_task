@@ -1,8 +1,8 @@
 import { View, Text, FlatList, TextInput, ActivityIndicator } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import HeadBar from './components/HeadBar'
-import Card from './components/Card'
+import HeadBar from '../components/HeadBar'
+import Card from '../components/Card'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import Snackbar from "react-native-snackbar";
 
